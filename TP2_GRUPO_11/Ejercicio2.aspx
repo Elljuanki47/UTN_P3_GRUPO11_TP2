@@ -10,6 +10,8 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            Nombre:&nbsp;
+            <asp:TextBox ID="txtNombre" runat="server"></asp:TextBox>
         </div>
     </form>
 </body>
