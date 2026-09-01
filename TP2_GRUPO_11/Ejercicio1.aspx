@@ -18,10 +18,13 @@
         <p>
             <asp:Label ID="Label1" runat="server" Text="Ingrese  nombre del producto:"></asp:Label>
 &nbsp;
-            <asp:TextBox ID="txtProducto2" runat="server"></asp:TextBox>
-        &nbsp;</p>
+            <asp:TextBox ID="txtProducto2" runat="server" style="margin-left: 8px"></asp:TextBox>
+        &nbsp;<asp:Label ID="Label3" runat="server" Font-Bold="False" Text="Cantidad"></asp:Label>
+            <asp:TextBox ID="txtCantidad2" runat="server" OnTextChanged="TextBox2_TextChanged" style="margin-left: 29px" Width="199px"></asp:TextBox>
+        </p>
         <p>
-            &nbsp;</p>
+            <asp:Button ID="btnGenerar" runat="server" Text="Generar Tabla" />
+        </p>
         <p>
             &nbsp;</p>
     </form>

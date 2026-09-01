@@ -13,5 +13,10 @@ namespace TP2_GRUPO_11
         {
 
         }
+
+        protected void TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
