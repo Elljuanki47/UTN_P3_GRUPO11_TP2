@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ejercicio2.aspx.cs" Inherits="TP2_GRUPO_11.Ejercicio2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ejercicio2.aspx.cs" Inherits="TP2_GRUPO_11.Ejercicio2" %>
 
 <!DOCTYPE html>
 
@@ -24,6 +24,11 @@
         <p>
             <asp:Label ID="Label3" runat="server" Text="Temas:"></asp:Label>
         </p>
+        <asp:CheckBox ID="chkCiencias" runat="server" style="margin-left: 60px;" Text="Ciencias" />
+        <p>
+            <asp:CheckBox ID="chkLiteratura" runat="server" style="margin-left: 60px;" Text="Literatura"/>
+        </p>
+        <asp:CheckBox ID="chkHistoria" runat="server" style="margin-left: 60px;" Text="Historia"/>
     </form>
 </body>
 </html>
