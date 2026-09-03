@@ -9,8 +9,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-        </div>
+        <asp:LinkButton ID="lnkRojo" runat="server" OnClick="lnkRojo_Click">Rojo</asp:LinkButton>
     </form>
 </body>
 </html>

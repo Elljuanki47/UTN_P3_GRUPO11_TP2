@@ -13,5 +13,11 @@ namespace TP2_GRUPO_11
         {
 
         }
+    
+        
+        protected void lnkRojo_Click(object sender, EventArgs e)
+        {
+            lblTexto.ForeColor = System.Drawing.Color.Red;
+        }
     }
 }
