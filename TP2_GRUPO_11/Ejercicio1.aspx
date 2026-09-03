@@ -23,9 +23,12 @@
             <asp:TextBox ID="txtCantidad2" runat="server" OnTextChanged="TextBox2_TextChanged" style="margin-left: 29px" Width="199px"></asp:TextBox>
         </p>
         <p>
-            <asp:Button ID="btnGenerar" runat="server" Text="Generar Tabla" />
+            <asp:Button ID="btnGenerar" runat="server" Text="Generar Tabla" OnClick="btnGenerar_Click" />
         </p>
         <p>
+            <p>
+    <asp:Table ID="tblProductos" runat="server" BorderWidth="1" GridLines="Both"></asp:Table>
+</p>
             &nbsp;</p>
     </form>
 </body>
