@@ -19,7 +19,12 @@
         </p>
         <p>
             <asp:Label ID="Label2" runat="server" Text="Ciudad:"></asp:Label>
-            <asp:TextBox ID="TextBox2" runat="server" style="margin-left: 17px; margin-bottom: 0px"></asp:TextBox>
+
+            <asp:DropDownList ID="ddlCiudad" runat="server" style="margin-left: 17px;">
+                <asp:ListItem Value="zona norte" Selected="True"> Gral. Pacheco </asp:ListItem>
+                <asp:ListItem Value="zona oeste"> San Miguel </asp:ListItem>
+                <asp:ListItem Value="zona sur"> Boedo </asp:ListItem>
+            </asp:DropDownList>
         </p>
         <p>
             <asp:Label ID="Label3" runat="server" Text="Temas:"></asp:Label>
@@ -29,6 +34,11 @@
             <asp:CheckBox ID="chkLiteratura" runat="server" style="margin-left: 60px;" Text="Literatura"/>
         </p>
         <asp:CheckBox ID="chkHistoria" runat="server" style="margin-left: 60px;" Text="Historia"/>
+
+        <p>
+            <asp:Button ID="btnResumen" runat="server" Text="Ver Resumen" 
+                OnClick="btnResumen_Click"/>
+        </p>
     </form>
 </body>
 </html>

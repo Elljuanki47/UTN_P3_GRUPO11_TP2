@@ -13,5 +13,10 @@ namespace TP2_GRUPO_11
         {
 
         }
+
+        protected void btnResumen_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Ejercicio2b.aspx?Nom=" + txtNombre.Text + "&Ape=" + TextBox1.Text + "&Zona=" + ddlCiudad.SelectedValue);
+        }
     }
 }
