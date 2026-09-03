@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -18,6 +18,14 @@ namespace TP2_GRUPO_11
         protected void lnkRojo_Click(object sender, EventArgs e)
         {
             lblTexto.ForeColor = System.Drawing.Color.Red;
+        }
+        protected void lnkAzul_Click(object sender, EventArgs e)
+        {
+            lblTexto.ForeColor = System.Drawing.Color.Blue;
+        }
+        protected void lnkVerde_Click(object sender, EventArgs e)
+        {
+            lblTexto.ForeColor = System.Drawing.Color.Green;
         }
     }
 }
