@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,7 +16,16 @@ namespace TP2_GRUPO_11
 
         protected void btnResumen_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Ejercicio2b.aspx?Nom=" + txtNombre.Text + "&Ape=" + TextBox1.Text + "&Zona=" + ddlCiudad.SelectedValue);
+            List<string> temas = new List<string>();
+            foreach (ListItem item in cblTemas.Items)
+            {
+                if (item.Selected)
+                {
+                    temas.Add(item.Value);
+                }
+            }
+            string temasParam = string.Join(",", temas);
+            Response.Redirect("Ejercicio2b.aspx?Nom=" + txtNombre.Text + "&Ape=" + TextBox1.Text + "&Zona=" + ddlCiudad.SelectedValue + "&Temas=" + Server.UrlEncode(temasParam));
         }
     }
 }
