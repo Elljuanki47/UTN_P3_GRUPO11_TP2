@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ejercicio3.aspx.cs" Inherits="TP2_GRUPO_11.Ejercicio3" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ejercicio3.aspx.cs" Inherits="TP2_GRUPO_11.Ejercicio3" %>
 
 <!DOCTYPE html>
 
@@ -14,7 +14,12 @@
         <asp:LinkButton ID="lnkAzul" runat="server" OnClick="lnkAzul_Click">Azul</asp:LinkButton>
         <br />
         <br />
-        <asp:LinkButton ID="lnkVerde" runat="server" OnClick="lnkAzul_Click">Verde</asp:LinkButton>
+        <asp:LinkButton ID="lnkVerde" runat="server" OnClick="lnkVerde_Click">Verde</asp:LinkButton>
+        <br />
+        <br />
+        <asp:Label ID="lblTexto" runat="server" Text="Texto Coloreado"></asp:Label>
+        <br />
+        <br />
     </form>
 </body>
 </html>
