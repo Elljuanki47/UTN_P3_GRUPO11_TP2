@@ -79,6 +79,13 @@ namespace TP2_GRUPO_11
 
             tblProductos.Rows.Add(filaTotal);
         }
+        protected void btnVaciar_Click(object sender, EventArgs e)
+        {
+            txtProducto1.Text = "";
+            txtCantidad1.Text = "";
+            txtProducto2.Text = "";
+            txtCantidad2.Text = "";
+        }
     }
-    }
+ }
     

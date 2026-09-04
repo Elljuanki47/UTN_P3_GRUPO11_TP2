@@ -24,6 +24,9 @@
         </p>
         <p>
             <asp:Button ID="btnGenerar" runat="server" Text="Generar Tabla" OnClick="btnGenerar_Click" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="btnVaciar" runat="server" Text="Vaciar Espacios" OnClick="btnVaciar_Click" />
+
         </p>
         <p>
     <asp:Label ID="lblMensaje" runat="server" ForeColor="Red" Font-Bold="true"></asp:Label>
