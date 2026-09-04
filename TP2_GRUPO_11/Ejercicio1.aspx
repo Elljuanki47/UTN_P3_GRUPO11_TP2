@@ -13,7 +13,7 @@
             Ingrese nombre del producto:&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="txtProducto1" runat="server"></asp:TextBox>
             <asp:Label ID="Label2" runat="server" Text="Cantidad"></asp:Label>
-            <asp:TextBox ID="TextBox1" runat="server" style="margin-left: 24px; margin-bottom: 0px" Width="201px"></asp:TextBox>
+            <asp:TextBox ID="txtCantidad1" runat="server" style="margin-left: 24px; margin-bottom: 0px" Width="201px"></asp:TextBox>
         </div>
         <p>
             <asp:Label ID="Label1" runat="server" Text="Ingrese  nombre del producto:"></asp:Label>
@@ -25,6 +25,9 @@
         <p>
             <asp:Button ID="btnGenerar" runat="server" Text="Generar Tabla" OnClick="btnGenerar_Click" />
         </p>
+        <p>
+    <asp:Label ID="lblMensaje" runat="server" ForeColor="Red" Font-Bold="true"></asp:Label>
+         </p>
         <p>
             <p>
     <asp:Table ID="tblProductos" runat="server" BorderWidth="1" GridLines="Both"></asp:Table>

@@ -21,9 +21,22 @@ namespace TP2_GRUPO_11
 
         protected void btnGenerar_Click(object sender, EventArgs e)
         {
+            int validacionCant1, validacionCant2;
+
+            if (txtProducto1.Text == "" || txtProducto2.Text == "" || int.Parse(txtCantidad1.Text)<0 ||
+                int.Parse(txtCantidad2.Text) < 0 || !int.TryParse(txtCantidad1.Text, out validacionCant1) || !int.TryParse(txtCantidad2.Text, out validacionCant2))
+            {
+                lblMensaje.Text = "Por favor, ingrese los 2 productos y sus cantidades positivas antes de generar la tabla.";
+                return;
+            }
+
+
             tblProductos.Rows.Clear();
 
             TableRow encabezado = new TableRow();
+
+            encabezado.BackColor = System.Drawing.Color.LightGray;
+            encabezado.Font.Bold = true;
 
             encabezado.Cells.Add(new TableCell());
             encabezado.Cells[0].Text = "Producto";
@@ -39,7 +52,7 @@ namespace TP2_GRUPO_11
             fila1.Cells[0].Text = txtProducto1.Text;
 
             fila1.Cells.Add(new TableCell());
-            fila1.Cells[1].Text = TextBox1.Text;
+            fila1.Cells[1].Text = txtCantidad1.Text;
 
             tblProductos.Rows.Add(fila1);
 
@@ -55,11 +68,14 @@ namespace TP2_GRUPO_11
 
             TableRow filaTotal = new TableRow();
 
+            filaTotal.BackColor = System.Drawing.Color.LightCyan;
+            filaTotal.Font.Bold = true;
+
             filaTotal.Cells.Add(new TableCell());
             filaTotal.Cells[0].Text = "Total";
 
             filaTotal.Cells.Add(new TableCell());
-            filaTotal.Cells[1].Text = (int.Parse(TextBox1.Text) + int.Parse(txtCantidad2.Text)).ToString();
+            filaTotal.Cells[1].Text = (int.Parse(txtCantidad1.Text) + int.Parse(txtCantidad2.Text)).ToString();
 
             tblProductos.Rows.Add(filaTotal);
         }
