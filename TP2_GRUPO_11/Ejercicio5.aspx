@@ -24,7 +24,17 @@
                     <asp:DropDownList ID="ddlMemoria" runat="server"
                         style="margin-left: 60px;">
                         <asp:ListItem Value="200">2 GB</asp:ListItem>
+                        <asp:ListItem Value="375">4 GB</asp:ListItem>
+                        <asp:ListItem Value="500">6 GB</asp:ListItem>
                     </asp:DropDownList>
+                    
+                    <br />
+                    <br />
+                    <br />
+                    
+                    <asp:Label ID="Label2" runat="server"
+                    Text="Seleccione Accesorios:">
+                    </asp:Label>
                 </p>
 
         </div>
