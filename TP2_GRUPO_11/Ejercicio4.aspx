@@ -15,6 +15,10 @@
             <br />
             Clave:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="txtClave" runat="server"></asp:TextBox>
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="btnValidar" runat="server" Text="Validar" OnClick="btnValidar_Click"/>
+                
         </div>
     </form>
 </body>

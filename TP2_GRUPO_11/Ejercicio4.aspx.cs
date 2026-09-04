@@ -13,5 +13,18 @@ namespace TP2_GRUPO_11
         {
 
         }
+        protected void btnValidar_Click(object sender, EventArgs e)
+        {
+            if (txtUsuario.Text == "claudio" && txtClave.Text == "casas")
+            {
+
+            }
+            else
+            {
+
+            }
+        }
+
+
     }
 }
