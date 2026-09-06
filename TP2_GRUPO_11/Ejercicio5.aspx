@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ejercicio5.aspx.cs" Inherits="TP2_GRUPO_11.Ejercicio5" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ejercicio5.aspx.cs" Inherits="TP2_GRUPO_11.Ejercicio5" %>
 
 <!DOCTYPE html>
 
@@ -54,6 +54,15 @@
                     <asp:Label ID="lblSubtotalAccesorios" runat="server"></asp:Label>
 
                 </p>
+            <br />
+<br />
+
+<asp:Button ID="btnCalcularPrecio" runat="server" Text="Calcular Precio" OnClick="btnCalcularPrecio_Click" />
+
+<br />
+<br />
+
+<asp:Label ID="lblPrecioFinal" runat="server" Font-Bold="true"></asp:Label>
 
         </div>
     </form>
