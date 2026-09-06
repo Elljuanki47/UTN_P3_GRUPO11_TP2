@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -28,5 +28,22 @@ namespace TP2_GRUPO_11
 
             lblSubtotalAccesorios.Text = "Subtotal Accesorios: $" + subtotalAccesorios;
         }
+        protected void btnCalcularPrecio_Click(object sender, EventArgs e)
+        {
+            decimal precioMemoria = Convert.ToDecimal(ddlMemoria.SelectedValue);
+            decimal precioAccesorios = 0;
+
+            foreach (ListItem accesorio in cblAccesorios.Items)
+            {
+                if (accesorio.Selected)
+                {
+                    precioAccesorios += Convert.ToDecimal(accesorio.Value, System.Globalization.CultureInfo.InvariantCulture);
+                }
+            }
+
+            decimal precioFinal = precioMemoria + precioAccesorios;
+
+            lblPrecioFinal.Text = "El Precio final es de " + precioFinal.ToString("N2") + " $";
+        }
     }
-}
+}﻿
