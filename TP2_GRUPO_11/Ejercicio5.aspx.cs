@@ -13,5 +13,20 @@ namespace TP2_GRUPO_11
         {
 
         }
+
+        protected void btnCalcularAccesorios_Click(object sender, EventArgs e)
+        {
+            int subtotalAccesorios = 0;
+
+            foreach(ListItem accesorio in cblAccesorios.Items)
+            {
+                if (accesorio.Selected)
+                {
+                    subtotalAccesorios += Convert.ToInt32(accesorio.Value);
+                }
+            }
+
+            lblSubtotalAccesorios.Text = "Subtotal Accesorios: $" + subtotalAccesorios;
+        }
     }
 }

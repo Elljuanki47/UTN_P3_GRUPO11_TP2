@@ -35,6 +35,24 @@
                     <asp:Label ID="Label2" runat="server"
                     Text="Seleccione Accesorios:">
                     </asp:Label>
+
+                    <br />
+                    <br />
+
+                    <asp:CheckBoxList ID="cblAccesorios" runat="server" style="margin-left: 60px;">
+                        <asp:ListItem Value="2000.50">Monitor LCD</asp:ListItem>
+                        <asp:ListItem Value="550.50">HD 500GB</asp:ListItem>
+                        <asp:ListItem Value="1200">Grabador DVD</asp:ListItem>
+                    </asp:CheckBoxList>
+
+                    <br />
+
+                    <asp:Button ID="btnCalcularAccesorios" runat="server" Text="Calcular accesorios" OnClick="btnCalcularAccesorios_Click" />
+
+                    <br />
+
+                    <asp:Label ID="lblSubtotalAccesorios" runat="server"></asp:Label>
+
                 </p>
 
         </div>
