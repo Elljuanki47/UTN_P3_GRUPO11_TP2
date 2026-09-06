@@ -78,31 +78,13 @@ namespace TP2_GRUPO_11
         protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
-        /// Control chkCiencias.
+        /// Control cblTemas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        //protected global::System.Web.UI.WebControls.CheckBox chkCiencias;
-
-        /// <summary>
-        /// Control chkLiteratura.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        //protected global::System.Web.UI.WebControls.CheckBox chkLiteratura;
-
-        /// <summary>
-        /// Control chkHistoria.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        //protected global::System.Web.UI.WebControls.CheckBox chkHistoria;
+        protected global::System.Web.UI.WebControls.CheckBoxList cblTemas;
 
         /// <summary>
         /// Control btnResumen.
@@ -112,6 +94,5 @@ namespace TP2_GRUPO_11
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnResumen;
-        protected global::System.Web.UI.WebControls.CheckBoxList cblTemas;
     }
 }

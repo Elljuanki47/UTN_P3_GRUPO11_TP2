@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ejercicio2.aspx.cs" Inherits="TP2_GRUPO_11.Ejercicio2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ejercicio2.aspx.cs" Inherits="TP2_GRUPO_11.Ejercicio2" %>
 
 <!DOCTYPE html>
 
@@ -21,9 +21,9 @@
             <asp:Label ID="Label2" runat="server" Text="Ciudad:"></asp:Label>
 
             <asp:DropDownList ID="ddlCiudad" runat="server" style="margin-left: 17px;">
-                <asp:ListItem Value="zona norte" Selected="True"> Gral. Pacheco </asp:ListItem>
-                <asp:ListItem Value="zona oeste"> San Miguel </asp:ListItem>
-                <asp:ListItem Value="zona sur"> Boedo </asp:ListItem>
+                <asp:ListItem Value="Norte" Selected="True"> Gral. Pacheco </asp:ListItem>
+                <asp:ListItem Value="Oeste"> San Miguel </asp:ListItem>
+                <asp:ListItem Value="Sur"> Boedo </asp:ListItem>
             </asp:DropDownList>
         </p>
         <p>

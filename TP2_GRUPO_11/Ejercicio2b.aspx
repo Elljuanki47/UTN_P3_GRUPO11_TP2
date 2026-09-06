@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ejercicio2b.aspx.cs" Inherits="TP2_GRUPO_11.Ejercicio2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ejercicio2b.aspx.cs" Inherits="TP2_GRUPO_11.Ejercicio2b" %>
 
 <!DOCTYPE html>
 

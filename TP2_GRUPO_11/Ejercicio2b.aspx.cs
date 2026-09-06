@@ -11,7 +11,10 @@ namespace TP2_GRUPO_11
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            lblNombre.Text += " " + Request.QueryString["Nom"];
+            lblApellido.Text += " " + Request.QueryString["Ape"];
+            lblZona.Text += " " + Request.QueryString["Zona"];
         }
     }
+
 }
