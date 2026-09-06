@@ -14,6 +14,10 @@ namespace TP2_GRUPO_11
             lblNombre.Text += " " + Request.QueryString["Nom"];
             lblApellido.Text += " " + Request.QueryString["Ape"];
             lblZona.Text += " " + Request.QueryString["Zona"];
+            foreach(string tema in Request.QueryString["Temas"].Split(','))
+            {
+                lblTemas.Text += "<br />" + tema;
+            }
         }
     }
 
