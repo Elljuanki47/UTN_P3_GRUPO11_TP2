@@ -37,12 +37,17 @@ namespace TP2_GRUPO_11
 
             encabezado.BackColor = System.Drawing.Color.LightGray;
             encabezado.Font.Bold = true;
+            encabezado.Height = 35;
 
             encabezado.Cells.Add(new TableCell());
-            encabezado.Cells[0].Text = "Producto";
+            encabezado.Cells[0].Text = "PRODUCTO";
+            encabezado.Cells[0].Width = 170;
+            encabezado.Cells[0].HorizontalAlign = HorizontalAlign.Center;
 
             encabezado.Cells.Add(new TableCell());
-            encabezado.Cells[1].Text = "Cantidad";
+            encabezado.Cells[1].Text = "CANTIDAD";
+            encabezado.Cells[1].Width = 100;
+            encabezado.Cells[1].HorizontalAlign = HorizontalAlign.Center;
 
             tblProductos.Rows.Add(encabezado);
 
@@ -56,6 +61,10 @@ namespace TP2_GRUPO_11
 
             tblProductos.Rows.Add(fila1);
 
+            fila1.Height = 30;
+            fila1.Cells[0].HorizontalAlign = HorizontalAlign.Center;
+            fila1.Cells[1].HorizontalAlign = HorizontalAlign.Center;
+
             TableRow fila2 = new TableRow();
 
             fila2.Cells.Add(new TableCell());
@@ -65,6 +74,10 @@ namespace TP2_GRUPO_11
             fila2.Cells[1].Text = txtCantidad2.Text;
 
             tblProductos.Rows.Add(fila2);
+
+            fila2.Height = 30;
+            fila2.Cells[0].HorizontalAlign = HorizontalAlign.Center;
+            fila2.Cells[1].HorizontalAlign = HorizontalAlign.Center;
 
             TableRow filaTotal = new TableRow();
 
@@ -78,6 +91,10 @@ namespace TP2_GRUPO_11
             filaTotal.Cells[1].Text = (int.Parse(txtCantidad1.Text) + int.Parse(txtCantidad2.Text)).ToString();
 
             tblProductos.Rows.Add(filaTotal);
+
+            filaTotal.Height = 30;
+            filaTotal.Cells[0].HorizontalAlign = HorizontalAlign.Center;
+            filaTotal.Cells[1].HorizontalAlign = HorizontalAlign.Center;
         }
         protected void btnVaciar_Click(object sender, EventArgs e)
         {
