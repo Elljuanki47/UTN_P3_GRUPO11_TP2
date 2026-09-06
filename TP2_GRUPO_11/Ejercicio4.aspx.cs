@@ -17,11 +17,11 @@ namespace TP2_GRUPO_11
         {
             if (txtUsuario.Text == "claudio" && txtClave.Text == "casas")
             {
-
+                Response.Redirect("Ejercicio4b.aspx?msj=" + txtUsuario.Text);
             }
             else
             {
-
+                Response.Redirect("Ejercicio4Error.aspx");
             }
         }
 
