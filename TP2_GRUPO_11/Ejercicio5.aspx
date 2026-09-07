@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ejercicio5.aspx.cs" Inherits="TP2_GRUPO_11.Ejercicio5" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ejercicio5.aspx.cs" Inherits="TP2_GRUPO_11.Ejercicio5" %>
 
 <!DOCTYPE html>
 
@@ -46,9 +46,11 @@
                     </asp:CheckBoxList>
 
                     <br />
+                    <br />
 
                     <asp:Button ID="btnCalcularAccesorios" runat="server" Text="Calcular accesorios" OnClick="btnCalcularAccesorios_Click" />
 
+                    <br />
                     <br />
 
                     <asp:Label ID="lblSubtotalAccesorios" runat="server"></asp:Label>
@@ -58,6 +60,8 @@
 <br />
 
 <asp:Button ID="btnCalcularPrecio" runat="server" Text="Calcular Precio" OnClick="btnCalcularPrecio_Click" />
+
+            <asp:Button ID="btnLimpiar" runat="server" Text="Limpiar" style="margin-left: 100px;" OnClick="btnLimpiar_Click" Width="110px"/>
 
 <br />
 <br />
