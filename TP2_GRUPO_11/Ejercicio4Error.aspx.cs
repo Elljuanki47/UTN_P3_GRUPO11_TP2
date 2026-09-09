@@ -9,5 +9,10 @@ namespace TP2_GRUPO_11
         {
 
         }
+
+        protected void btnReintentar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Ejercicio4.aspx");
+        }
     }
 }

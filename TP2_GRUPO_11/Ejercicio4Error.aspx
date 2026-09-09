@@ -12,6 +12,7 @@
         <div>
             <h2>USUARIO INVÁLIDO INGRESO NO PERMITIDO</h2>
         </div>
+        <asp:Button ID="btnReintentar" runat="server" OnClick="btnReintentar_Click" Text="Reintentar" />
     </form>
 </body>
 </html>

@@ -20,6 +20,7 @@
             <asp:Button ID="btnValidar" runat="server" Text="Validar" OnClick="btnValidar_Click"/>
                 
         </div>
+        <asp:Label ID="lblIngrese" runat="server"></asp:Label>
     </form>
 </body>
 </html>
