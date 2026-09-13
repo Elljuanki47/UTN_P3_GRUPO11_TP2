@@ -9,8 +9,16 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-        </div>
+        <asp:LinkButton ID="lnkRojo" runat="server" Font-Bold="True" ForeColor="Black" OnClick="lnkRojo_Click">ROJO</asp:LinkButton>
+        <br/><br/>
+        <asp:LinkButton ID="lnkAzul" runat="server" Font-Bold="True" ForeColor="Black" OnClick="lnkAzul_Click">AZUL</asp:LinkButton>
+        <br/><br/>
+        <asp:LinkButton ID="lnkVerde" runat="server" Font-Bold="True" ForeColor="Black" OnClick="lnkVerde_Click">VERDE</asp:LinkButton>
+        <br/><br/>
+        <asp:Label ID="lblTexto" runat="server" Text="TEXTO COLOREADO" Font-Bold="True"></asp:Label>
+        <br/><br/>
+        <asp:Button ID="btnRestablecer" runat="server"
+    Text="Restablecer colores" OnClick="btnRestablecer_Click" />
     </form>
 </body>
 </html>
