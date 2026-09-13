@@ -13,5 +13,48 @@ namespace TP2_GRUPO_11
         {
 
         }
+
+        protected void btnCalcularAccesorios_Click(object sender, EventArgs e)
+        {
+            decimal subtotalAccesorios = 0;
+
+            foreach (ListItem accesorio in cblAccesorios.Items)
+            {
+                if (accesorio.Selected)
+                {
+                    subtotalAccesorios += Convert.ToDecimal(accesorio.Value);
+                }
+            }
+
+            lblSubtotalAccesorios.Text = "Subtotal Accesorios: " + subtotalAccesorios + " $";
+        }
+
+        protected void btnCalcularPrecio_Click(object sender, EventArgs e)
+        {
+            decimal precioMemoria = Convert.ToDecimal(ddlMemoria.SelectedValue);
+            decimal precioAccesorios = 0;
+
+            foreach (ListItem accesorio in cblAccesorios.Items)
+            {
+                if (accesorio.Selected)
+                {
+                    precioAccesorios += Convert.ToDecimal(accesorio.Value);
+                }
+            }
+
+            decimal precioFinal = precioMemoria + precioAccesorios;
+
+            lblPrecioFinal.Text = "Memoria: " + precioMemoria.ToString("N2") + " $"
+                + "<br />Accesorios: " + precioAccesorios.ToString("N2") + " $"
+                + "<br />Precio final: " + precioFinal.ToString("N2") + " $";
+        }
+
+        protected void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            ddlMemoria.SelectedIndex = 0;
+            cblAccesorios.ClearSelection();
+            lblSubtotalAccesorios.Text = "";
+            lblPrecioFinal.Text = "";
+        }
     }
 }

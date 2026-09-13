@@ -10,6 +10,64 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <h1>Armado de PC</h1>
+
+                <p>
+                    <asp:Label ID="Label1" runat="server"
+                        Text="Seleccione cantidad de memoria:">
+                    </asp:Label>
+                
+                    <br />
+                    <br />
+                    <br />
+                
+                    <asp:DropDownList ID="ddlMemoria" runat="server"
+                        style="margin-left: 60px;">
+                       <asp:ListItem Value="200">2 GB - $200,00</asp:ListItem>
+                       <asp:ListItem Value="375">4 GB - $375,00</asp:ListItem>
+                       <asp:ListItem Value="500">6 GB - $500,00</asp:ListItem>
+                    </asp:DropDownList>
+                    
+                    <br />
+                    <br />
+                    <br />
+                    
+                    <asp:Label ID="Label2" runat="server"
+                    Text="Seleccione Accesorios:">
+                    </asp:Label>
+
+                    <br />
+                    <br />
+
+                    <asp:CheckBoxList ID="cblAccesorios" runat="server" style="margin-left: 60px;">
+                        <asp:ListItem Value="2000.50">Monitor LCD - $2.000,50</asp:ListItem>
+                        <asp:ListItem Value="550.50">HD 500GB - $550,50</asp:ListItem>
+                        <asp:ListItem Value="1200">Grabador DVD - $1.200,00</asp:ListItem>
+                    </asp:CheckBoxList>
+
+                    <br />
+                    <br />
+
+                    <asp:Button ID="btnCalcularAccesorios" runat="server" Text="Calcular accesorios" OnClick="btnCalcularAccesorios_Click" />
+
+                    <br />
+                    <br />
+
+                    <asp:Label ID="lblSubtotalAccesorios" runat="server"></asp:Label>
+
+                </p>
+            <br />
+<br />
+
+<asp:Button ID="btnCalcularPrecio" runat="server" Text="Calcular Precio" OnClick="btnCalcularPrecio_Click" />
+
+            <asp:Button ID="btnLimpiar" runat="server" Text="Limpiar" style="margin-left: 100px;" OnClick="btnLimpiar_Click" Width="110px"/>
+
+<br />
+<br />
+
+<asp:Label ID="lblPrecioFinal" runat="server" Font-Bold="true"></asp:Label>
+
         </div>
     </form>
 </body>
