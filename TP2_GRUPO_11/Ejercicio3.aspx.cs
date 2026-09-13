@@ -36,5 +36,12 @@ namespace TP2_GRUPO_11
             lnkAzul.ForeColor = System.Drawing.Color.Black;
             lnkVerde.ForeColor = System.Drawing.Color.Green;
         }
+        protected void btnRestablecer_Click(object sender, EventArgs e)
+        {
+            lblTexto.ForeColor = System.Drawing.Color.Black;
+            lnkRojo.ForeColor = System.Drawing.Color.Black;
+            lnkAzul.ForeColor = System.Drawing.Color.Black;
+            lnkVerde.ForeColor = System.Drawing.Color.Black;
+        }
     }
 }
