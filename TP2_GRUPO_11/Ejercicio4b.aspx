@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ejercicio4b.aspx.cs" Inherits="TP2_GRUPO_11.Ejercicio4b" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ejercicio4b.aspx.cs" Inherits="TP2_GRUPO_11.Ejercicio4b" %>
 
 <!DOCTYPE html>
 
@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <h2>Bienvenido a mi página Sr./a <asp:Label ID="lblUsuario" runat="server"></asp:Label></h2>
+           <h2>Bienvenido a mi p&aacute;gina Sr./a <asp:Label ID="lblUsuario" runat="server"></asp:Label></h2>
         </div>
     </form>
 </body>
