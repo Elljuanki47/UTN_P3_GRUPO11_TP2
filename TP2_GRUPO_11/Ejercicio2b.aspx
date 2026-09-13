@@ -20,6 +20,13 @@
         <asp:Label ID="lblTemas" runat="server" Text="Los Temas Elegidos Son:"></asp:Label>
         <br /><br />
         </div>
+        <p>
+            &nbsp;</p>
+        <p>
+    <asp:Button ID="btnVolver" runat="server" Text="Volver" OnClick="btnVolver_Click" />
+            </p>
+        <p>
+            &nbsp;</p>
     </form>
 </body>
 </html>

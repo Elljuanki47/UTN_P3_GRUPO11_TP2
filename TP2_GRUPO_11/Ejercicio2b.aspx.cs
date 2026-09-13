@@ -11,13 +11,29 @@ namespace TP2_GRUPO_11
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            lblNombre.Text += " " + Request.QueryString["Nom"];
-            lblApellido.Text += " " + Request.QueryString["Ape"];
-            lblZona.Text += " " + Request.QueryString["Zona"];
-            foreach(string tema in Request.QueryString["Temas"].Split(','))
+            if (!IsPostBack)
             {
-                lblTemas.Text += "<br />" + tema;
+                lblNombre.Text = "Nombre: " + Request.QueryString["Nom"];
+                lblApellido.Text = "Apellido: " + Request.QueryString["Ape"];
+                lblZona.Text = "Zona: " + Request.QueryString["Zona"];
+
+                lblTemas.Text = "Los temas elegidos son:<br />";
+
+                foreach (string tema in Request.QueryString["Temas"].Split(','))
+                {
+                    lblTemas.Text += tema + "<br />";
+
+                }
             }
+        }
+
+        protected void btnResumen_Click(object sender, EventArgs e)
+        {
+
+        }
+        protected void btnVolver_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Ejercicio2.aspx");
         }
     }
 

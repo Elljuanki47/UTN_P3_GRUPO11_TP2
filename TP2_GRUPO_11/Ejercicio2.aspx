@@ -38,7 +38,16 @@
         <p>
             <asp:Button ID="btnResumen" runat="server" Text="Ver Resumen" 
                 OnClick="btnResumen_Click"/>
+
+            <asp:Button ID="btnLimpiar" runat="server" Text="Limpiar" 
+                OnClick="btnLimpiar_Click" Style="margin-left:20px;" />
+
         </p>
+
+        <p>
+            <asp:Label ID="lblError" runat="server" ForeColor="Red" Font-Bold="true"></asp:Label>
+        </p>
+       
     </form>
 </body>
 </html>
