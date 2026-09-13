@@ -22,11 +22,11 @@ namespace TP2_GRUPO_11
             {
                 if (accesorio.Selected)
                 {
-                    subtotalAccesorios += Convert.ToDecimal(accesorio.Value, System.Globalization.CultureInfo.InvariantCulture);
+                    subtotalAccesorios += Convert.ToDecimal(accesorio.Value);
                 }
             }
 
-            lblSubtotalAccesorios.Text = "Subtotal Accesorios: " + subtotalAccesorios.ToString("N2") + " $";
+            lblSubtotalAccesorios.Text = "Subtotal Accesorios: " + subtotalAccesorios + " $";
         }
 
         protected void btnCalcularPrecio_Click(object sender, EventArgs e)
@@ -38,13 +38,15 @@ namespace TP2_GRUPO_11
             {
                 if (accesorio.Selected)
                 {
-                    precioAccesorios += Convert.ToDecimal(accesorio.Value, System.Globalization.CultureInfo.InvariantCulture);
+                    precioAccesorios += Convert.ToDecimal(accesorio.Value);
                 }
             }
 
             decimal precioFinal = precioMemoria + precioAccesorios;
 
-            lblPrecioFinal.Text = "El Precio final es de " + precioFinal.ToString("N2") + " $";
+            lblPrecioFinal.Text = "Memoria: " + precioMemoria.ToString("N2") + " $"
+                + "<br />Accesorios: " + precioAccesorios.ToString("N2") + " $"
+                + "<br />Precio final: " + precioFinal.ToString("N2") + " $";
         }
 
         protected void btnLimpiar_Click(object sender, EventArgs e)

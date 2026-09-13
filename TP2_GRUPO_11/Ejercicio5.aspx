@@ -23,9 +23,9 @@
                 
                     <asp:DropDownList ID="ddlMemoria" runat="server"
                         style="margin-left: 60px;">
-                        <asp:ListItem Value="200">2 GB</asp:ListItem>
-                        <asp:ListItem Value="375">4 GB</asp:ListItem>
-                        <asp:ListItem Value="500">6 GB</asp:ListItem>
+                       <asp:ListItem Value="200">2 GB - $200,00</asp:ListItem>
+                       <asp:ListItem Value="375">4 GB - $375,00</asp:ListItem>
+                       <asp:ListItem Value="500">6 GB - $500,00</asp:ListItem>
                     </asp:DropDownList>
                     
                     <br />
@@ -40,9 +40,9 @@
                     <br />
 
                     <asp:CheckBoxList ID="cblAccesorios" runat="server" style="margin-left: 60px;">
-                        <asp:ListItem Value="2000.50">Monitor LCD</asp:ListItem>
-                        <asp:ListItem Value="550.50">HD 500GB</asp:ListItem>
-                        <asp:ListItem Value="1200">Grabador DVD</asp:ListItem>
+                        <asp:ListItem Value="2000.50">Monitor LCD - $2.000,50</asp:ListItem>
+                        <asp:ListItem Value="550.50">HD 500GB - $550,50</asp:ListItem>
+                        <asp:ListItem Value="1200">Grabador DVD - $1.200,00</asp:ListItem>
                     </asp:CheckBoxList>
 
                     <br />
