@@ -13,5 +13,34 @@ namespace TP2_GRUPO_11
         {
 
         }
+        protected void btnValidar_Click(object sender, EventArgs e)
+        {
+            if (txtUsuario.Text == "claudio" && txtClave.Text == "casas")
+            {
+                Response.Redirect("Ejercicio4b.aspx?msj=" + txtUsuario.Text);
+            }
+            else if (txtUsuario.Text == "" && txtClave.Text == "")
+            {
+                lblIngrese.ForeColor = System.Drawing.Color.Red;
+                lblIngrese.Text = "Debe ingresar un usuario y una clave";
+            }
+            else if (txtUsuario.Text == ""&& txtClave.Text != "")
+            {
+                lblIngrese.ForeColor = System.Drawing.Color.Red;
+                lblIngrese.Text = "Debe ingresar un usuario";
+            }
+            else if (txtClave.Text == ""&& txtUsuario.Text !="")
+            {
+                lblIngrese.ForeColor = System.Drawing.Color.Red;
+                lblIngrese.Text = "Debe ingresar una clave";
+            }
+            else
+            {
+                Response.Redirect("Ejercicio4Error.aspx");
+            }
+
+        }
+
+
     }
 }
