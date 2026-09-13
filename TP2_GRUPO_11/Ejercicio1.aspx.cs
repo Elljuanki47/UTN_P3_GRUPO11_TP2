@@ -23,10 +23,24 @@ namespace TP2_GRUPO_11
         {
             int validacionCant1, validacionCant2;
 
-            if (txtProducto1.Text == "" || txtProducto2.Text == "" || int.Parse(txtCantidad1.Text)<0 ||
-                int.Parse(txtCantidad2.Text) < 0 || !int.TryParse(txtCantidad1.Text, out validacionCant1) || !int.TryParse(txtCantidad2.Text, out validacionCant2))
+            lblMensaje.Text= "";
+
+            if (txtProducto1.Text == "" || txtProducto2.Text == "")
             {
-                lblMensaje.Text = "Por favor, ingrese los 2 productos y sus cantidades positivas antes de generar la tabla.";
+                lblMensaje.Text = "Por favor, ingrese los 2 productos.";
+                return;
+            }
+
+            if (!int.TryParse(txtCantidad1.Text, out validacionCant1) ||
+                !int.TryParse(txtCantidad2.Text, out validacionCant2))
+            {
+                lblMensaje.Text = "Por favor, ingrese cantidades enteras.";
+                return;
+            }
+
+            if (validacionCant1 <= 0 || validacionCant2 <= 0)
+            {
+                lblMensaje.Text = "Las cantidades deben ser positivas.";
                 return;
             }
 

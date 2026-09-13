@@ -31,11 +31,9 @@
         <p>
     <asp:Label ID="lblMensaje" runat="server" ForeColor="Red" Font-Bold="true"></asp:Label>
          </p>
-        <p>
-            <p>
-    <asp:Table ID="tblProductos" runat="server" BorderWidth="1" GridLines="Both"></asp:Table>
-</p>
-            &nbsp;</p>
+        <div>
+            <asp:Table ID="tblProductos" runat="server" BorderWidth="1" GridLines="Both"></asp:Table>
+        </div>
     </form>
 </body>
 </html>
